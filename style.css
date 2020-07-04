@@ -1,0 +1,57 @@
+body {
+    background: url(./background.jpg) center center;
+} 
+@font-face {
+    font-family: 'Intro Bold';
+    src: url('intro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+.name {
+    color: #fff !important;
+    text-shadow: 10px 5px 5px black;
+    font-family: 'Intro Bold';
+    display: table;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 72px;
+}
+.url {
+    color: #fff !important;
+    text-shadow: 10px 5px 5px black;
+    font-family: 'Intro Bold';
+    display: table;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    font-size: 32px;
+}
+a {
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: underline;
+}
+.time {
+    color: #fff !important;
+    text-shadow: 10px 5px 5px black;
+    font-family: 'Intro Bold';
+    display: table;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    font-size: 20px;
+}
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>SandyJS World.</title>
+        <link rel ="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="name">
+            SandyJS
+        </div>
+        <div class="url">
+            <a href="https://vk.com/sandyjs">
+                VK
+            </a>
+            |
+            <a href="https://github.com/tailsjs">
+                GIT
+            </a>
+            |
+            <a href="https://t.me/tjsblog">
+                TG
+            </a>
+        </div>
+        <div class="time">
+            <p id="time"></p>
+        </div>
+
+        <script>
+        window.onload = function(){
+            setInterval(function(){
+                let time = document.getElementById('time'),
+                    date = new Date();
+
+                function normalCount(number){
+                    if(number < 10)return "0" + number
+                    if(number > 9)return String(number)
+                }
+                time.innerHTML = `${normalCount(date.getHours())}:${normalCount(date.getMinutes())}:${normalCount(date.getSeconds())}`  
+            }, 1000)
+        }
+        </script>
+    </body>
+</html>
