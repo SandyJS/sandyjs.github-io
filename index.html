@@ -6,7 +6,8 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="name">
+        <canvas id="demo-canvas"></canvas>
+        <div class="name large-header">
             SandyJS
         </div>
         <div class="url">
@@ -25,13 +26,15 @@
         <div class="time">
             <p id="time"></p>
         </div>
-
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+        <script src="background.js"></script> <!--https://codepen.io/jasperlachance/pen/QNMwBg отсюда-->
         <script>
         window.onload = function(){
             setInterval(function(){
                 let time = document.getElementById('time'),
                     date = new Date();
-
+                console.log(screen.width)
                 function normalCount(number){
                     if(number < 10)return "0" + number
                     if(number > 9)return String(number)
